@@ -107,7 +107,7 @@ body {
 
     background-color: #1e3557;
 
-    width: 100%;
+    max-width: none;
     padding: 40px 40px;
 }
 
