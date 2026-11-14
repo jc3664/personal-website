@@ -73,6 +73,10 @@ section p {
     max-width: 750px;
 }
 
+section p2{
+    font-size: 17px;
+    max-width: 450px;
+}
 
 body {
     font-family: Arial, Helvetica, sans-serif;
