@@ -22,7 +22,6 @@
 .logo {
     color: white;
     font-size: 50px; 
-    font-weight: bold;
 }
 
 .nav-links{
@@ -91,7 +90,7 @@ body {
 
 #home h1 {
     color: #1e3557;
-    font-size: 48px;
+    font-size: 60px;
     margin-bottom: 5px;
 }
 
