@@ -171,3 +171,9 @@ body {
     padding: 0 20px;
 }
 
+.revit-video {
+    display: block;
+    width: 600px;
+    height: 400px;
+    margin: 40px;
+}
