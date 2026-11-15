@@ -173,8 +173,7 @@ body {
 
 .project-text p{
     max-width: none;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
 }
 
 .revit-video {
@@ -183,4 +182,5 @@ body {
     height: 400px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 60px;
 }
