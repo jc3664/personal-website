@@ -173,6 +173,8 @@ body {
 
 .project-text p{
     max-width: none;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .revit-video {
