@@ -8,6 +8,41 @@
     
 <body>
 
+<img class="mySlides" src="images/revit/image_1.jpg">
+<img class="mySlides" src="images/revit/image_2.jpg">
+<img class="mySlides" src="images/revit/image_3.jpg">
+<img class="mySlides" src="images/revit/image_4.jpg">
+
+<script> 
+    let slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      const slides = document.querySelectorAll(".mySlides");
+    
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+    
+      slides.forEach(slide => {
+        slide.style.display = "none";
+      });
+    
+      slides[slideIndex - 1].style.display = "block";
+    }
+
+</script>
+    
+<button class="w3-button w3-display-left"
+onclick="plusDivs(-1)">&#10094;</button>
+
+<button class="w3-button w3-display-right"
+onclick="plusDivs(+1)">&#10095;</button>
+
+    
 </body>
 
 </html> 
