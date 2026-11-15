@@ -2,11 +2,73 @@
 <html>
 
 <head> 
-    <title> CEE 4745 Structural Analysis</title>
+    <title> Revit Project Experience Page </title>
     <link rel="stylesheet" href ="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 </head>
     
 <body>
+
+<!-- Nav Bar -->
+<nav class="navbar">
+    <div class="logo">
+        Jessie Chen 
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+    </ul>
+        
+</nav>
+
+<div class="w3-content w3-display-container">
+    <img class="mySlides" src="images/cee4745/img_1.jpg">
+    <img class="mySlides" src="images/cee4745/img_2.jpg">
+    <img class="mySlides" src="images/cee4745/img_4.jpg">
+    <img class="mySlides" src="images/cee4745/img_5.jpg">
+    <img class="mySlides" src="images/cee4745/img_6.jpg">
+    <img class="mySlides" src="images/cee4745/img_7.jpg">
+    <img class="mySlides" src="images/cee4745/img_8.jpg">
+    
+    <button class="w3-button w3-display-left"
+    onclick="plusDivs(-1)">&#10094;</button>
+    
+    <button class="w3-button w3-display-right"
+    onclick="plusDivs(+1)">&#10095;</button>
+</div>
+    
+<script> 
+    let slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      const slides = document.querySelectorAll(".mySlides");
+    
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+    
+      slides.forEach(slide => {
+        slide.style.display = "none";
+      });
+    
+      slides[slideIndex - 1].style.display = "block";
+    }
+
+</script>
+    
+<h1>
+    Structural Analysis 
+</h1>
+
+<p>
+For my CEE 4745: Automation in Concrete class, we were tasked to design a structural model that will be printed using 3D printed concrete and undergo an applied loading. We were given creative freedom in developing our designs, and our inspiration came from the iconic flower-shaped cloud from the Spongebob SquarePants series. Incorporating feedback from our initial design, the revised model reflects improvements in overall geometrical shape and structural performance, informed by our analysis of how the structure is expected to respond under applied loading conditions. 
+</p>
 
 </body>
 
