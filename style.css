@@ -49,11 +49,11 @@
 }
 
 .project {
-    text.align: center;
+    text-align: center;
 }
 
 .project img {
-    width: 400px:
+    width: 400px;
     height: 200px;
     object-fit: cover;
 }
