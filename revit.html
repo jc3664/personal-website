@@ -24,51 +24,54 @@
         
 </nav>
 
-<div class="w3-content w3-display-container">
-    <img class="mySlides" src="images/revit/img_1.jpg">
-    <img class="mySlides" src="images/revit/img_2.jpg">
-    <img class="mySlides" src="images/revit/img_4.jpg">
-    <img class="mySlides" src="images/revit/img_5.jpg">
-    <img class="mySlides" src="images/revit/img_6.jpg">
+<div class="over-projects">
+    <div class="w3-content w3-display-container">
+        <img class="mySlides" src="images/revit/img_1.jpg">
+        <img class="mySlides" src="images/revit/img_2.jpg">
+        <img class="mySlides" src="images/revit/img_4.jpg">
+        <img class="mySlides" src="images/revit/img_5.jpg">
+        <img class="mySlides" src="images/revit/img_6.jpg">
+        
+        <button class="w3-button w3-display-left"
+        onclick="plusDivs(-1)">&#10094;</button>
+        
+        <button class="w3-button w3-display-right"
+        onclick="plusDivs(+1)">&#10095;</button>
+    </div>
+        
+    <script> 
+        let slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          const slides = document.querySelectorAll(".mySlides");
+        
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+        
+          slides.forEach(slide => {
+            slide.style.display = "none";
+          });
+        
+          slides[slideIndex - 1].style.display = "block";
+        }
     
-    <button class="w3-button w3-display-left"
-    onclick="plusDivs(-1)">&#10094;</button>
-    
-    <button class="w3-button w3-display-right"
-    onclick="plusDivs(+1)">&#10095;</button>
+    </script>
+    <div class="project-description">
+        <h1>
+            Revit Experience
+        </h1>
+        
+        <p>
+            As part of my Intro to Revit course, I modeled the interior and exterior design of a three-story building. The building features an atrium with a curtain wall system and multiple floors of office space. 
+        </p>
+    </div>
+
 </div>
-    
-<script> 
-    let slideIndex = 1;
-    showDivs(slideIndex);
-    
-    function plusDivs(n) {
-      showDivs(slideIndex += n);
-    }
-    
-    function showDivs(n) {
-      const slides = document.querySelectorAll(".mySlides");
-    
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-    
-      slides.forEach(slide => {
-        slide.style.display = "none";
-      });
-    
-      slides[slideIndex - 1].style.display = "block";
-    }
-
-</script>
-    
-<h1>
-    Revit Experience
-</h1>
-
-<p>
-    As part of my Intro to Revit course, I modeled the interior and exterior design of a three-story building. The building features an atrium with a curtain wall system and multiple floors of office space. 
-</p>
-
     
 <!-- Footer for Contact Info -->
 <section id="footer">
