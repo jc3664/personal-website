@@ -136,8 +136,8 @@ body {
 }
 
 .w3-content {
-    max-width: 980px;
-    margin: auto;
+    max-width: 60%;
+    flex-shrink:0;
     position: relative;
 }
 
@@ -146,4 +146,8 @@ body {
     height: 300px;
     object-fit: contain;
     display: none;
+}
+
+.project-description{
+    width:40%;
 }
