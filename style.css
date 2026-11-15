@@ -168,13 +168,13 @@ body {
 
 .project-text {
     max-width: 1200px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0 20px;
 }
 
 .project-text p{
     max-width: none;
-    text-align: center;
+    text-align: left;
 }
 
 .revit-video {
