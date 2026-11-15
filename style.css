@@ -148,6 +148,15 @@ body {
     display: none;
 }
 
+.overall-project{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
 .project-description{
     width:40%;
 }
