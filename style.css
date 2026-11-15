@@ -87,24 +87,24 @@ body {
     line-height: 1.6;
 }
 
-home {
+#home {
     padding-top: 110px;
     padding-bottom: 110px;
 }
 
-home h1 {
+#home h1 {
     color: #7a8580;
     font-size: 60px;
     margin-bottom: 5px;
 }
 
-about,
-projects,
-experience{
+#about,
+#projects,
+#experience{
     border-top: 1px solid #7a8580;
 }
 
-footer {
+#footer {
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
