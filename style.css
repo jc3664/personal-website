@@ -136,8 +136,10 @@ body {
 }
 
 .w3-content {
-    max-width: 60%;
+    width: 60%;
+    max-width: none;
     flex-shrink:0;
+    margin: 0;
     position: relative;
 }
 
@@ -158,5 +160,6 @@ body {
 }
 
 .project-description{
-    width:40%;
+    flex: 1;
+    min-width: 0;
 }
