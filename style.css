@@ -171,6 +171,10 @@ body {
     padding: 0 20px;
 }
 
+.project-text p{
+    max-width: none;
+}
+
 .revit-video {
     display: block;
     width: 600px;
