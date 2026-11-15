@@ -23,29 +23,6 @@
     </ul>
         
 </nav>
-
-    <script> 
-        let slideIndex = 1;
-        showDivs(slideIndex);
-        
-        function plusDivs(n) {
-          showDivs(slideIndex += n);
-        }
-        
-        function showDivs(n) {
-          const slides = document.querySelectorAll(".mySlides");
-        
-          if (n > slides.length) {slideIndex = 1}
-          if (n < 1) {slideIndex = slides.length}
-        
-          slides.forEach(slide => {
-            slide.style.display = "none";
-          });
-        
-          slides[slideIndex - 1].style.display = "block";
-        }
-    
-    </script>
     
 <div class="overall-project">
     <div class="w3-content w3-display-container">
@@ -73,6 +50,29 @@
     </div>
 
 </div>
+
+    <script> 
+        let slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          const slides = document.querySelectorAll(".mySlides");
+        
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+        
+          slides.forEach(slide => {
+            slide.style.display = "none";
+          });
+        
+          slides[slideIndex - 1].style.display = "block";
+        }
+    
+    </script>
     
 <!-- Footer for Contact Info -->
 <section id="footer">
