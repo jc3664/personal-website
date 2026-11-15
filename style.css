@@ -135,3 +135,13 @@ body {
     padding: 10px 40px;
 }
 
+.w3-content {
+    max-width: 980px;
+    margin: auto;
+    position: relative;
+}
+
+.mySlides{
+    width: 100%;
+    display: none;
+}
